@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+    main {
+        margin-top: 60px;
+        padding-top: 0px;
+        background: lightgrey;
+    }
+
+/* Header Styles */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+}
+
+/* Form Styles */
+#form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .nav-link {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #form {
+        margin-top: 20px;
+    }
+
+    #email {
+        width: 100%;
+    }
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 480px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-bar {
+        padding-top: 20px !important;
+    }
+}
