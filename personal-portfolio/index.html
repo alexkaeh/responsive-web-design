@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Kaehler - Web Developer</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    #welcome-section {
+        height: 100vh;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #projects {
+        padding: 20px;
+    }
+    .project-tile {
+        background-color: #ddd;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+    #navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    #profile-link {
+        color: blue;
+        text-decoration: none;
+    }
+    @media (max-width: 480px) {
+        #navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #navbar a {
+            margin: 5px 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+    <a href="#welcome-section">Welcome</a>
+    <a href="#projects">Projects</a>
+    <a id="profile-link" href="https://github.com/YourGitHubUsername" target="_blank">GitHub Profile</a>
+</nav>
+
+<section id="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+</section>
+
+<section id="projects">
+    <div class="project-tile">
+        <h2>Project 1</h2>
+        <p>Description of Project 1</p>
+        <a href="#">Project 1 Link</a>
+    </div>
+    <div class="project-tile">
+        <h2>Project 2</h2>
+        <p>Description of Project 2</p>
+        <a href="#">Project 2 Link</a>
+    </div>
+</section>
+
+</body>
+</html>
